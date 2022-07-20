@@ -1,0 +1,20 @@
+# 最低版本号
+CMAKE_MINIMUM_REQUIRED(VERSION 3.10)				
+
+# 工程名
+PROJECT(IROBOT)	
+
+set(CMAKE_CXX_STANDARD 11)			
+
+# 查找头文件
+INCLUDE_DIRECTORIES(include)			
+
+ADD_SUBDIRECTORY(Main main)
+
+ADD_SUBDIRECTORY(Armor armor)
+
+ADD_SUBDIRECTORY(Pose solvePNP)
+
+ADD_SUBDIRECTORY(SetCamera setcam)
+
+ADD_SUBDIRECTORY(Serial serial)
